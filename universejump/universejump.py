@@ -38,3 +38,5 @@ while (i < numberOfCases):
     
     
     i = i + 1
+
+f.close()

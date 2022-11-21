@@ -71,3 +71,5 @@ while (i < numberOfMatrixes):
         print("Neither diagonal nor triangular")
 
     i = i + 1
+
+f.close()
