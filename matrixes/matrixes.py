@@ -6,7 +6,7 @@ def isLowerTriangular(matrix):
     i = 2
     j = 1
     while (i < length):
-        print()
+        
     return True
 
 
