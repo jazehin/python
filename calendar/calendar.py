@@ -16,8 +16,8 @@ monthLength = {
 }
 
 def DrawCalendar(year, month):
-    if (((year % 400 == 0) and (year % 100 == 0)) or (year % 4 ==0) and (year % 100 != 0)): # https://www.programiz.com/python-programming/examples/leap-year
-        # leap year, se feb is 29
+    if (((year % 400 == 0) and (year % 100 == 0)) or (year % 4 == 0) and (year % 100 != 0)): # https://www.programiz.com/python-programming/examples/leap-year
+        # leap year, so feb is 29
         monthLength[2] = 29
 
     print(str.expandtabs("mon\ttue\twed\tthu\tfri\tsat\tsun", 5))
@@ -27,15 +27,15 @@ def DrawCalendar(year, month):
     
     
     i = 1
-    counter = 1
+    dayCounter = 1
     string = ""
     end = start + monthLength[date.month]
     while (i < end):
         if (i < start or i > start + monthLength[date.month]):
             string = string + "\t"
         else:
-            string = string + "{}\t".format(counter)
-            counter = counter + 1
+            string = string + "{}\t".format(dayCounter)
+            dayCounter = dayCounter + 1
 
         if (i % 7 == 0 or i == end - 1):
             print(str.expandtabs(string, 5))
@@ -48,10 +48,10 @@ def DrawCalendar(year, month):
 
 f = open("calendar.txt", "r")
 
-numberOfMonths = int(f.readline())
+numberOfDates = int(f.readline())
 
 i = 0
-while (i < numberOfMonths):
+while (i < numberOfDates):
 
     date = f.readline().split("/")
     # we don't really need the day imo
