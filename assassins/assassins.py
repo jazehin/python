@@ -36,15 +36,6 @@ while (i < numberOfCriminals):
     else:
         print("{} is not a serial killer".format(name))
 
-
-
-
     i = i + 1
-
-
-
-
-
-
 
 f.close()
