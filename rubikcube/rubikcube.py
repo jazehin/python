@@ -78,3 +78,5 @@ while (i < numberOfRubiks):
     PrintRubik(rubik)
 
     i = i + 1
+
+f.close()

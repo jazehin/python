@@ -62,3 +62,5 @@ while (i < numberOfDates):
     DrawCalendar(year, month)
 
     i = i + 1
+
+f.close()

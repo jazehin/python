@@ -69,3 +69,5 @@ while (i < numberOfSudokus):
         print("Not resolved")
 
     i = i + 1
+
+f.close()
